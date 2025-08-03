@@ -1,0 +1,30 @@
+// Singly Linkedlist
+
+class Node{
+int data ;
+Node next ;
+
+Node(int data){
+this.data = data ;
+this.next  = null ;
+}
+}
+class Linkedlist{
+public static void Linkedlist(Node head){
+Node temp = head ;
+while(temp! = null){
+System.out.println( temp + " " ) ;
+temp = temp.next ;
+}
+System.out.println();
+}
+// call main function 
+
+
+public static void main (String [] args){
+Node head = new Node(12) ;
+head.next = new Node(10);
+head.next.next = new Node(5) ;
+Linkedlist.head() ;
+}
+}
