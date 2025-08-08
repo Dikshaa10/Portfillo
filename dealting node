@@ -1,0 +1,35 @@
+
+class Node{
+  int data ;
+  Node next ;
+  Node(int data){
+    this.data = data ;
+    this.next = null ;
+  }
+}
+public static Node DelitingAtbegginging(Node head ){
+  if(head== null){
+    System.out.println("the list is empty");
+      return null ;
+  }
+  return head.next ;
+}
+// print function
+public static void Linkedlist(Node head){
+  Node temp = head ;
+  while(temp !=null){
+     System.out.println(temp+ " ");
+       temp = temp.next ;
+  }
+}
+// call  main function
+public static void main(String[] args){
+  Node head = new Node(12);
+  head.next = new Node(7);
+  head.next.next = new Node(44);
+  Linkedlist(head);
+  
+  head =  DelitingAtbegginging(head);
+  
+
+  
